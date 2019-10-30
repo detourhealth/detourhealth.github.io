@@ -219,7 +219,7 @@ input, select, textarea {
 /* Image Sizing */
 
 	.responsive {
-		max-width:  300px;
+		max-width:  200px;
 		height: auto;
 	}
 
@@ -2076,7 +2076,9 @@ input, select, textarea {
 	  margin-top: 0.1em;
 	  text-align: center;
 	}
-		#badges img{
+		#podcast_image img{
+			max-width: 300px;
+			height: auto;
 			vertical-align: middle;
 		}
 
