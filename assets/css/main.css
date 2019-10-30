@@ -217,6 +217,13 @@ input, select, textarea {
 
 /* Row */
 
+	.responsive {
+		max-width: 100%
+		height: auto;
+	}
+
+/* Row */
+
 	.row {
 		display: flex;
 		flex-wrap: wrap;
