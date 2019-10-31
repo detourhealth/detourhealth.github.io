@@ -183,6 +183,9 @@ input, select, textarea {
 		max-width: 100%;
 		width: 70em;
 	}
+		.container.fill{
+			min-height: 50px;
+		}
 
 		@media screen and (max-width: 1680px) {
 
@@ -2074,6 +2077,7 @@ input, select, textarea {
 	  margin-left: auto;
     margin-right: auto;
 	  margin-top: 0.1em;
+		margin-bottom: 0.1em;
 	  text-align: center;
 	}
 		#podcast_image img{
@@ -2092,6 +2096,10 @@ input, select, textarea {
 	}
 		#badges img{
 			vertical-align: middle;
+			margin-left: 0.25em;
+			margin-right: 0.25em;
+			margin-top: 1.5em;
+			margin-bottom: 0.25em;
 		}
 
 /* Page Wrapper */
