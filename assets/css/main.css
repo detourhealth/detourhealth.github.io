@@ -222,8 +222,8 @@ input, select, textarea {
 /* Image Sizing */
 
 	.responsive {
-		max-width:  200px;
-		height: auto;
+		max-height:  60px;
+		width: auto;
 	}
 
 /* Row */
@@ -2081,7 +2081,7 @@ input, select, textarea {
 	  text-align: center;
 	}
 		#podcast_image img{
-			max-width: 300px;
+			max-width: 270px;
 			height: auto;
 			vertical-align: middle;
 		}
@@ -2129,7 +2129,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		margin: 2.5em 0 0 0;
+		margin: 0 0 0 0;
 	}
 
 		#nav > ul {
@@ -2149,7 +2149,7 @@ input, select, textarea {
 					border-radius: 5px;
 					color: #5d5d5d;
 					text-decoration: none;
-					padding: 0.6em 1.2em 0.6em 1.2em;
+
 					-moz-transition: background-color .25s ease-in-out;
 					-webkit-transition: background-color .25s ease-in-out;
 					-ms-transition: background-color .25s ease-in-out;
@@ -2227,27 +2227,7 @@ input, select, textarea {
 		margin: 4em 0 0 0;
 	}
 
-		#banner header {
-			background-color: rgba(34, 30, 31, 0.50);
-			display: inline-block;
-			padding: 2.5em 5em;
-			border-radius: 5px;
-		}
 
-			#banner header h2 {
-				color: #fff;
-				font-weight: 700;
-				font-size: 2.5em;
-				margin: 0 0 0.65em 0;
-			}
-
-			#banner header p {
-				color: #d52349;
-				padding: 0;
-				font-style: normal;
-				margin: 0;
-				font-size: 1.5em;
-			}
 
 /* Intro */
 
