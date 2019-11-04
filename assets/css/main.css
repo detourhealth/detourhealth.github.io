@@ -226,13 +226,18 @@ input, select, textarea {
 		width: auto;
 	}
 
+	.podresponsive{
+		max-width: 95%;
+		height: auto;
+	}
+
 /* Row */
 
 	.row {
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
-		align-items: stretch;
+		align-items: center;
 	}
 
 		.row > * {
@@ -1094,6 +1099,10 @@ input, select, textarea {
 
 				.row > .col-12-medium {
 					width: 100%;
+				}
+
+				.row > .col-12-menu {
+					width: 0%;
 				}
 
 				.row > .off-12-medium {
@@ -2081,7 +2090,7 @@ input, select, textarea {
 	  text-align: center;
 	}
 		#podcast_image img{
-			max-width: 270px;
+			max-width: 100%;
 			height: auto;
 			vertical-align: middle;
 		}
@@ -2376,7 +2385,6 @@ input, select, textarea {
 /* XLarge */
 
 	@media screen and (max-width: 1680px) {
-
 		/* Basic */
 
 			body, input, textarea, select {
@@ -2481,7 +2489,6 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 980px) {
-
 		/* Basic */
 
 			html, body {
@@ -2518,7 +2525,7 @@ input, select, textarea {
 		/* Intro */
 
 			#intro {
-				padding: 3em 0 0 0;
+				padding: 0 0 0 0;
 			}
 
 				#intro section {
@@ -2528,10 +2535,6 @@ input, select, textarea {
 					padding: 40px 0 0 0;
 				}
 
-					#intro section.first {
-						border-top: 0;
-						padding-top: 0;
-					}
 
 					#intro section p {
 						margin: 0;
@@ -2617,8 +2620,8 @@ input, select, textarea {
 						content: '\f0c9';
 						display: block;
 						position: absolute;
-						right: 10px;
-						top: 44px;
+						left: 10px;
+						top: 10px;
 						width: 50px;
 						height: 40px;
 						line-height: 40px;
@@ -2729,6 +2732,10 @@ input, select, textarea {
 
 	@media screen and (max-width: 736px) {
 
+			.podresponsive{
+				max-width: 100%;
+				height: auto;
+			}
 		/* Basic */
 
 			body, input, textarea, select {
@@ -2882,7 +2889,7 @@ input, select, textarea {
 		/* Intro */
 
 			#intro {
-				padding: 2em 0 0 0;
+				padding: 0 0 0 0;
 			}
 
 				#intro section {
