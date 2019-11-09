@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Detour Health - Podcast</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="apple-itunes-app" content="app-id=XXXXXXXXXX">
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="../../images/icons/favicon.ico" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<div class="row">
+						<div class="col-4 col-12-medium">
+							<section>
+								<a href="../../index.html"><img src="../../images/full_logo.png" class="responsive"></a>
+							</section>
+						</div>
+
+					<!-- Nav -->
+						<div class="col-8 col-12-menu">
+							<section>
+								<nav id="nav">
+									<ul>
+										<li><a href="../../index.html">Home</a></li>
+										<li><a href="../../about-us.html">About Us</a></li>
+										<li><a href="../../podcast.html">Podcast</a></li>
+										<li><a href="../../newsletter.html">Newsletter</a></li>
+										<li><a href="../../forum.html">Forum</a></li>
+										<li>
+											<a href="#">Account</a>
+											<ul>
+												<li><a href="#">My Profile</a></li>
+												<li><a href="#">Settings</a></li>
+												<li><a href="#">Log Out</a></li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+							</section>
+						</div>
+					</div>
+						<section id="intro" class="container">
+							<header class="major">
+							</header>
+							<div class="row aln-center">
+								<div class="col-4 col-12-small">
+									<div id="podcast_image">
+										<img src="../../images/podcast_thumbnails/episode_1.png" alt=""/>
+									</div>
+
+								</div>
+								<div class="col-4 col-12-small" align=left>
+
+									<p>
+										In episode 1 we talk to Mohammad Asadi Lari, who is a medical student at the University of Toronto.  He is a social entrepreneur and tells us about his experience in medical entrepreneurship.
+									</p>
+									<p><br>Make sure you subscribe to the podcast and check back often so you don't miss the latest episodes!  Click the button below to listen in your browser.
+									</p>
+
+									<button class="button-large" style="display:block; margin-left:auto; margin-right: auto; margin-top:1em" onclick="openAudioPlayer()">Click Here to Listen</button>
+									<!--<audio src="" controls id="audioPlayer">
+										Your browser does not currently support audio.
+									</audio>
+									<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+									<script>
+										audioPlayer();
+										function audioPlayer(){
+											alert("hi");
+										}
+									</script>-->
+								</div>
+							</div>
+						</section>
+						<div id="badges">
+							<a href=""><img src="../../images/podcast_badges/apple.png" style="height:30px" /></a>
+							<a href=""><img src="../../images/podcast_badges/google.png" style="height:30px" /></a>
+							<a href=""><img src="../../images/podcast_badges/spotify.png" style="height:30px" /></a>
+							<a href=""><img src="../../images/podcast_badges/overcast.png" style="height:30px" /></a>
+							<a href=""><img src="../../images/podcast_badges/stitcher.png" style="height:30px" /></a>
+							<a href=""><img src="../../images/podcast_badges/RSS.png" style="height:30px" /></a>
+						</div>
+				</section>
+
+				<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<header class="major">
+							<h2>Transcript</h2>
+						</header>
+						<!-- Content -->
+							<article class="box post">
+								<p>Coming Soon!</p>
+							</article>
+
+					</div>
+				</section>
+
+		    <!-- Footer -->
+				<section id="footer">
+					<div class="container"  style="text-align:center">
+						<div class="row">
+								<div class="col-6" style="display:inline-block; margin-left:auto; margin-right:auto">
+									<section>
+										<header>
+											<h2>FOLLOW US</h2>
+										</header>
+										<ul class="social">
+											<li><a class="icon brands fa-facebook" href="https://www.facebook.com/detourhealthcare/"><span class="label">Facebook</span></a></li>
+											<li><a class="icon brands fa-twitter" href="https://twitter.com/DetourHealth"><span class="label">Twitter</span></a></li>
+											<li><a class="icon brands fa-linkedin" href="https://www.linkedin.com/company/detour-health/about/"><span class="label">LinkedIn</span></a></li>
+										</ul>
+									</section>
+								</div>
+
+							<div class="col-12">
+
+								<!-- Copyright -->
+									<div id="copyright">
+										<ul class="links">
+											<li>&copy; 2019 Detour Health. All rights reserved.</li>
+										</ul>
+									</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+					<section id="player" style="display:none">
+						<div class="player_container">
+							<div class="row aln-center gtr-0">
+									<div class="col-3 col-12-small">
+										<div class = player_controls>
+
+
+											<img src="../../images/podcast_player/rw30.png" style="width:8%; cursor: pointer" class="ffrw" onclick="adjustTimeBackward()"/>
+										  <img src="../../images/podcast_player/play.png" id="play_pause" style="width:10%; cursor: pointer" onclick="playPause()"/>
+											<img src="../../images/podcast_player/ff30.png" style="width:8%; cursor: pointer" class="ffrw" onclick="adjustTimeForward()"/>
+
+										</div>
+									</div>
+									<div class="col-6 col-12-small">
+										<div class="row aln-center gtr-0">
+											<div class = "col-2">
+												<p id=count_up>00:00</p>
+											</div>
+											<div class = "col-8">
+												<progress id="podcast_progress" value="0" max="100" style="cursor:pointer"></progress>
+												<!--<div class = "player_tracking">
+													<img src="../../images/podcast_player/no-progress.png" style="width:100%; height:0.5em"/>
+													<img src="../../images/podcast_player/progress.png" style="width:33.33333333333333333333333333333%; height:0.5em; position: absolute; left: 25%"/>
+												</div>-->
+											</div>
+											<div class = "col-2">
+												<p id=count_down>-00:00</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-3 col-12-small">
+										<p style="cursor:pointer" onclick="closeAudioPlayer()">X Done Listening</p>
+									</div>
+							</div>
+						</div>
+					</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+			<!-- Move to another script once solidified -->
+			<script language="javascript">
+				var podcast_audio = new Audio('../../audio/episode_1.mp3');
+				var current_time_seconds;
+				var neg_secs;
+				var current_time_mins;
+				var neg_mins;
+				var pod_duration;
+				function playPause(){
+					if(document.getElementById("play_pause").getAttribute('src') == "../../images/podcast_player/play.png"){
+						podcast_audio.play();
+						document.getElementById("play_pause").setAttribute('src', "../../images/podcast_player/pause.png");
+
+					}
+					else{
+						podcast_audio.pause();
+						document.getElementById("play_pause").setAttribute('src', "../../images/podcast_player/play.png");
+					}
+
+				}
+				function adjustTimeForward(){
+					podcast_audio.currentTime = 	podcast_audio.currentTime + 30;
+				}
+				function adjustTimeBackward(){
+					podcast_audio.currentTime = 	podcast_audio.currentTime - 30;
+				}
+
+				function seek(e) {
+						var percent = e.offsetX / this.offsetWidth;
+						podcast_audio.currentTime = percent * podcast_audio.duration;
+				}
+
+				podcast_audio.ontimeupdate = function(){updateTime()};
+
+				function updateTime(){
+					current_time_seconds = Math.floor(podcast_audio.currentTime);
+					neg_secs = Math.floor(podcast_audio.duration - current_time_seconds);
+					current_time_minutes = Math.floor(current_time_seconds/60);
+					neg_mins = Math.floor(neg_secs/60);
+					neg_secs = neg_secs - (neg_mins*60);
+					current_time_seconds = current_time_seconds - (current_time_minutes * 60);
+					if(current_time_seconds < 10){
+						current_time_seconds = '0' + current_time_seconds;
+					}
+					if(neg_secs < 10){
+						neg_secs = '0' + neg_secs;
+					}
+					if(current_time_minutes < 10){
+						current_time_minutes = '0' + current_time_minutes;
+					}
+					if(neg_mins < 10){
+						neg_mins = '0' + neg_mins;
+					}
+
+					document.getElementById("count_up").innerHTML = current_time_minutes + ':' + current_time_seconds;
+					document.getElementById("count_down").innerHTML = '-' + neg_mins + ':' + neg_secs;
+					document.getElementById("podcast_progress").max = Math.floor(podcast_audio.duration);
+					document.getElementById("podcast_progress").value = Math.floor(podcast_audio.currentTime);
+
+					document.getElementById("podcast_progress").addEventListener("click", seek);
+
+
+				}
+
+				function openAudioPlayer(){
+					document.getElementById("player").style.display = "block";
+					podcast_audio.play();
+					document.getElementById("play_pause").setAttribute('src', "../../images/podcast_player/pause.png");
+				}
+				function closeAudioPlayer(){
+					document.getElementById("player").style.display = "none";
+					podcast_audio.pause();
+					podcast_audio.currentTime=0;
+					document.getElementById("play_pause").setAttribute('src', "../../images/podcast_player/play.png");
+				}
+			</script>
+
+	</body>
+</html>
