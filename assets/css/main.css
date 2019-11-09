@@ -175,6 +175,11 @@ input, select, textarea {
 	p, ul, ol, dl, table {
 		margin-bottom: 2em;
 	}
+/* player_container*/
+	.player_container{
+		margin: 0 auto;
+		width: 100vw;
+	}
 
 /* Container */
 
@@ -229,6 +234,9 @@ input, select, textarea {
 	.podresponsive{
 		max-width: 95%;
 		height: auto;
+	}
+	.podresponsive:hover{
+		opacity: 0.5;
 	}
 
 /* Row */
@@ -2366,6 +2374,30 @@ input, select, textarea {
 				font-size: 1.75em;
 			}
 
+/* Player */
+		#player {
+			position: fixed;
+			text-align: center;
+			bottom: 0;
+			margin: 0;
+			background: #ffffff;
+			background-size: auto 100%;
+		}
+
+/* Player Controls */
+		.player_controls{
+			padding: 0;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 1em;
+			margin-bottom: 0.5em;
+		}
+			.player_controls img{
+				display: inline;
+				margin-left: 1em;
+				margin-right: 1em;
+			}
+
 /* Copyright */
 
 	#copyright {
@@ -2736,6 +2768,7 @@ input, select, textarea {
 				max-width: 100%;
 				height: auto;
 			}
+
 		/* Basic */
 
 			body, input, textarea, select {
