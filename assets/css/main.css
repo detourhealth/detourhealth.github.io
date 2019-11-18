@@ -2116,7 +2116,7 @@ input, select, textarea {
 				}
 
 			.sub_container{
-				width: 60vw;
+				width: 80vw;
 				height: auto;
 				display: inline-block;
 				text-align: center;
@@ -2458,7 +2458,7 @@ input, select, textarea {
 		#subscription {
 			position: fixed;
 			text-align: center;
-			left: 20vw;
+			left: 10vw;
 			top: 0;
 			margin: 0;
 			border: solid 1px #000000;
