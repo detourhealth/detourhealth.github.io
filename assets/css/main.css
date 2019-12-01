@@ -2117,7 +2117,7 @@ input, select, textarea {
 
 			.sub_container{
 				width: 100vw;
-				height: 100vw;
+				height: 100vh;
 				display: inline-block;
 				text-align: center;
 				position:relative;
