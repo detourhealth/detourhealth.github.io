@@ -254,7 +254,6 @@ input, select, textarea {
 	}
 		.podresponsive:hover{
 			opacity: 0.5;
-			max-width: 100%;
 			margin-left: auto;
 			margin-right: auto;
 			margin-top: 0;
