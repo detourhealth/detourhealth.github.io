@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Detour Health - 404</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="apple-itunes-app" content="app-id=1486555417">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.ico" />
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	</head>
+
+	<script>
+		$(function(){
+			$("#header_common").load("header.html");
+			$("#footer_common").load("footer.html");
+			$("#badges_common").load("badges.html");
+		});
+	</script>
+
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<div id="header_common"></div>
+					<section id="intro" class="container">
+							<header class="major">
+							</header>
+							<div class="row aln-center">
+								<div class="col-12">
+										<h2>The Forum - Coming in 2020</h2>
+										<p><br>In the meantime, you can <a href="index.html">return home</a>.<br>Feel free to subscribe to the Detour Health Podcast today and <a onclick="openSubscription()" style="cursor:pointer">click here</a> to subscribe to our newsletter.!</p>
+								</div>
+							</div>
+					</section>
+					<div id="badges_common"></div>
+				</section>
+
+
+				<!-- Footer -->
+				<section id="footer">
+					<div id="footer_common"></div>
+				</section>
+
+		</div>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				function closeSubscription(){
+					document.getElementById("subscription").style.display = "none";
+				}
+				function openSubscription(){
+					document.getElementById("subscription").style.display = "block";
+				}
+			</script>
+
+	</body>
+</html>
