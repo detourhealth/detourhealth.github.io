@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+
+<html>
+	<head>
+		<title>Detour Health - Player</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="apple-itunes-app" content="app-id=1486555417">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="../../images/icons/favicon.ico" />
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+		<script src="/__/firebase/7.6.1/firebase-app.js"></script>
+
+		<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+		<script src="/__/firebase/7.6.1/firebase-analytics.js"></script>
+
+		<!-- Add Firebase products that you want to use -->
+		<script src="/__/firebase/7.6.1/firebase-auth.js"></script>
+		<script src="/__/firebase/7.6.1/firebase-firestore.js"></script>
+		<script src="/__/firebase/7.6.1/firebase-storage.js"></script>
+
+		<!-- Initialize Firebase -->
+		<script src="/__/firebase/init.js"></script>
+
+		<script src="assets/js/loadAudio.js"></script>
+	</head>
+
+	<script>
+		$(function(){
+			$("#header_common").load("header.html");
+			$("#footer_common").load("footer.html");
+			$("#badges_common").load("badges.html");
+		});
+	</script>
+
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<div id="header_common"></div>
+					<section id="intro" class="container">
+						<header class="major">
+						</header>
+						<div class="row aln-center">
+							<div class="col-4 col-12-small">
+								<div id="podcast_image">
+									<img id="thumb">
+								</div>
+
+							</div>
+							<div class="col-4 col-12-small" align=left>
+
+								<p id="ep_desc">
+								</p>
+								<p><br>Make sure you subscribe to the podcast and check back often so you don't miss the latest episodes!  Click the button below to listen in your browser.
+								</p>
+
+								<button class="button-large" id="listenButton" style="display:none; margin-left:auto; margin-right: auto; margin-top:1em" onclick="openAudioPlayer()">Click Here to Listen</button>
+
+							</div>
+						</div>
+					</section>
+					<div id="badges_common"></div>
+				</section>
+
+				<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<header class="major">
+							<h2>Transcript</h2>
+						</header>
+						<!-- Content -->
+							<article class="box post">
+								<p>Coming Soon!</p>
+							</article>
+
+					</div>
+				</section>
+
+		    <!-- Footer -->
+				<section id="footer">
+					<div id="footer_common"></div>
+				</section>
+
+
+					<section id="player" style="display:none">
+						<div class="player_container">
+							<div class="row aln-center gtr-0">
+									<div class="col-3 col-12-small">
+										<div class = player_controls>
+
+
+											<img src="../../images/podcast_player/rw30.png" style="width:8%; cursor: pointer" class="ffrw" onclick="adjustTimeBackward()"/>
+										  <img src="../../images/podcast_player/play.png" id="play_pause" style="width:10%; cursor: pointer" onclick="playPause()"/>
+											<img src="../../images/podcast_player/ff30.png" style="width:8%; cursor: pointer" class="ffrw" onclick="adjustTimeForward()"/>
+
+										</div>
+									</div>
+									<div class="col-6 col-12-small">
+										<div class="row aln-center gtr-0">
+											<div class = "col-2">
+												<p id=count_up>00:00</p>
+											</div>
+											<div class = "col-8">
+												<progress id="podcast_progress" value="0" max="100" style="cursor:pointer"></progress>
+												<!--<div class = "player_tracking">
+													<img src="../../images/podcast_player/no-progress.png" style="width:100%; height:0.5em"/>
+													<img src="../../images/podcast_player/progress.png" style="width:33.33333333333333333333333333333%; height:0.5em; position: absolute; left: 25%"/>
+												</div>-->
+											</div>
+											<div class = "col-2">
+												<p id=count_down>-00:00</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-3 col-12-small">
+										<p style="cursor:pointer" onclick="closeAudioPlayer()">X Done Listening</p>
+									</div>
+							</div>
+						</div>
+					</section>
+
+		</div>
+
+			<!-- Scripts -->
+
+
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+
+
+
+	</body>
+</html>
